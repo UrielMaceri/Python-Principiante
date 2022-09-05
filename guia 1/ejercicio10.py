@@ -14,4 +14,4 @@ for x in range (cant):
     print(suma)
     cero=uno  #"cero" toma el valor de "uno" 
     uno=suma  #"uno" toma el vlaor anterior
-    suma=cero+uno #"cero" es el valor anterior y "uno" es el valor que se muestra, así "suma" se convierte en la suma de de esos dos y muestra el siguiente
+    suma=cero+uno #"cero" se vuelve el valor anterior al actual y "uno" el valor que se mostró esta vuelta, así "suma" se convierte en la suma de de esos dos y muestra el siguiente
