@@ -4,10 +4,10 @@ nombre=str(input("Introduzca su nombre sin espacios: "))
 caracteres=int
 
 #contar los caracteres
-caracteres = len(nombre)
+caracteres = int(len(nombre))
 
 #condicional par o impar
-if int(caracteres)%2 == 0:
-    print("Par.")
+if caracteres%2 == 0:
+    print("Las letras de su nombre son pares.")
 else:
-    print("Impar.")
+    print("Las letras de su nombre son impares.")
