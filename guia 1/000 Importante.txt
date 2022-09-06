@@ -1,4 +1,5 @@
 Hay algunos ejercicios que son iguales a otros anteriores
 
-2 y 9
-4 y 12
+
+2 -> 9
+4 -> 12
