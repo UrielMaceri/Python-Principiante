@@ -7,7 +7,7 @@ ult2=int
 num=int(input("Ingrese un numero entero: "))
 ult1=num%10
 print("El ultimo digito es:", ult1)
-str(ult2)=num%100
+ult2=num%100
 print("Y los dos ultimos digitos son:",ult2) #esto funciona pero no devuelve resultados como "06" dado que los ceros a la izquierda no se toman en cuenta
 
 #defino una funcion nueva para sacar los ultimos 2 digitos de "num" y transformarlos a una cadena str, como alternativa para mostrar numeros como "05" o "07"
