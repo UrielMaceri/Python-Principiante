@@ -1,2 +1,1 @@
-# Paradigmas de programación.
-# Estos son los ejercicios de la guía Nº1 de la materia Paradigmas, en la universidad UMET.
+# Ejercitacion de python dada en la materia "Paradigmas de Programacion" en la universidad UMET
