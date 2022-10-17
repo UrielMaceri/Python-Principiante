@@ -1,6 +1,3 @@
-from re import A
-
-
 n=int(0)
 mult=int(0)
 promult=int(0)
@@ -28,9 +25,10 @@ while n!=0:
 
     n=int(input("Introduzca otro (el programa se cierra con 0): "))
 
-if promult!=0:
+if promult!=0:  #esta condicion es para que el programa no tire error al dividir por 0
     print(f"A) El promedio entre los {promult} números que son {mult/promult}.")
 else:
     print("No hubo multiplos de 6.")
+
 print(f"B) {divisor} numeros son divisores exactos del número anterior.")
 print(f"C) La cantidad de veces que se generó una secuencia de 3 numeros impares ascendente fue {secuencia}.")
