@@ -35,8 +35,8 @@ while opcion.lower()!="d":
         while texto.endswith(".")==False: #el ciclo es para evitar que no se introduzca un texto sin un punto al final
             texto=str(input("El texto DEBE terminar con un punto: ")).lower()
         texto=texto[0: len(texto)-1] #elimino el punto para contar tambien la ultima palabra
-        for x in texto.split(): #repito un ciclo por la cantidad de palabras que se cuentan con la funcion .split()
-            letra=x[len(x)-1] #se cuenta solo la ultima letra de x y luego se comprueba si esta es una de las vocales estipuladas
+        for palabra in texto.split(): #repito un ciclo por la cantidad de palabras que se cuentan con la funcion .split()
+            letra=palabra[len(palabra)-1] #se cuenta solo la ultima letra de x y luego se comprueba si esta es una de las vocales estipuladas
             if letra in vocales:
                 palvocal=palvocal+1
         print(f"{palvocal} palabras terminan en vocal.")
