@@ -18,7 +18,6 @@ def palabras():
             lista.append(palabra)
     return lista
 
-
 txt(input("Introduzca un texto, debe terminar con un punto: "))
 palabras()
 print(lista)
