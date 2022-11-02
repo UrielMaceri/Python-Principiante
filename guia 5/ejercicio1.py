@@ -1,4 +1,5 @@
-def txt(texto):
+def txt(texto): #funcion
+    #variables locales
     repeticiones=int(0)
     sin_punto=str("")
     digitos=int(0)
@@ -8,6 +9,7 @@ def txt(texto):
     palabra_larga=str("")
     de_totales=int(0)
 
+    #Validación para que se introduzca un texto terminado en un punto
     while not(texto.endswith(".")):
         print("Ese texto no es valido.")
         texto=input("Por favor, termine con un punto: ")
@@ -15,13 +17,24 @@ def txt(texto):
 
     for palabra in sin_punto.split():
         repeticiones+=1
-        if not palabra.isalpha(): digitos+=1 #a) cuántas palabras tenían al menos un caracter que era en realidad un dígito
-        if len(palabra)<=3: tres_letras+=1  #b) cuántas palabras tenían 3 o menos letras
-        if len(palabra)>=4 and len(palabra)<=6: seis_letras+=1  #b) cuántas tenían 4 y hasta 6 letras
-        if len(palabra)>6: mas_de_seis+=1  #b)cuántas tenían más de 6 letras
-        if repeticiones==1 or len(palabra)>len(palabra_larga): palabra_larga=palabra #c) Determinar la longitud de la palabra más larga
-        if (palabra.find("de")<len(palabra)/2) and (palabra.find("de")!=-1): de_totales+=1 #d) cuántas palabras contuvieron la expresión "de", pero en la primera mitad de la palabra
+
+        #a) cuántas palabras tenían al menos un caracter que era en realidad un dígito
+        if not palabra.isalpha(): digitos+=1
+
+        #b) cuántas palabras tenían 3 o menos letras
+        if len(palabra)<=3: tres_letras+=1  
+        #b) cuántas tenían 4 y hasta 6 letras
+        if len(palabra)>=4 and len(palabra)<=6: seis_letras+=1
+        #b)cuántas tenían más de 6 letras 
+        if len(palabra)>6: mas_de_seis+=1 
+
+        #c) Determinar la longitud de la palabra más larga
+        if repeticiones==1 or len(palabra)>len(palabra_larga): palabra_larga=palabra 
+        
+        #d) cuántas palabras contuvieron la expresión "de", pero en la primera mitad de la palabra
+        if (palabra.find("de")<len(palabra)/2) and (palabra.find("de")!=-1): de_totales+=1 
     
+    #imprimo los resultados dentro de la misma funcion
     print("----------------------------------------------------------------------------------------------------")
     print(f"\nCantidad de palabras que tenían al menos un caracter como digito: {digitos}")
     print(f"Cantidad de palabras con 3 o menos letras: {tres_letras}")
